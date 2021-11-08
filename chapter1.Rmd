@@ -5,6 +5,8 @@
 
 I feel quite exited about this course, but I am also afraid that the workload for me will be too much since I have absolutely no prior experience on R or other programming languages, and I have a quite crowded calender even without this course. I hope I will make it!
 
+https://github.com/iinannala/IODS-project.git
+
 ```{r}
 # This is a so-called "R chunk" where you can write R code.
 
