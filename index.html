@@ -189,7 +189,7 @@ pre code {
 <pre class="r"><code># This is a so-called &quot;R chunk&quot; where you can write R code.
 
 date()</code></pre>
-<pre><code>## [1] &quot;Tue Nov 09 10:41:53 2021&quot;</code></pre>
+<pre><code>## [1] &quot;Mon Nov 15 09:39:43 2021&quot;</code></pre>
 <p>The text continues here.</p>
 <hr />
 </div>
@@ -202,8 +202,12 @@ date()</code></pre>
 <li>Assume the reader has no previous knowledge of your data or the more advanced methods you are using.</li>
 </ul>
 <pre class="r"><code>date()</code></pre>
-<pre><code>## [1] &quot;Tue Nov 09 10:41:53 2021&quot;</code></pre>
+<pre><code>## [1] &quot;Mon Nov 15 09:39:43 2021&quot;</code></pre>
 <p>Here we go again…</p>
+<p>The dataset I will analyse in this exercise is a subset from a more comprehensive dataset describing results from a survey on learning and studying statistics, found from [link] (<a href="https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS3-data.txt" class="uri">https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS3-data.txt</a>). The dataset has been collected from students’ answers (total of 183) to the survey after a course Johdatus yhteiskuntatilastotieteeseen in autumn 2014. In addition to the answers to learning style- and attitude-related questions measured on Likert scale (assigned to a number 1-5 corresponding to how well the claim is felt to be true),some background information on the students (e.g. age, gender) and their points in the exam were collected. Full data description can be found on: [link] (<a href="https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS2-meta.txt" class="uri">https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS2-meta.txt</a>)</p>
+<p>To start, the subset of the data I prepared previously (data wrangling exercise), is read to this file. The subset has 7 variables (whereas the original had 60). The attitude, deep-, surface- and strategic learning variables correspond to an average value (from 1 to 5) to many questions (8-12 pieces) measuring the same dimension. Of the 183 answers, those that had 0 points from the final exam were excluded from this subset, leaving 166 answers (“rows”). These can be seen by checking the structure and dimensions of the subset:</p>
+<p>learning2014_subset &lt;- read.csv(“data/learning2014_subset.csv”)</p>
+<p>str(learning2014_subset) dim(learning2014_subset)</p>
 <hr />
 <p>(more chapters to be added similarly as we proceed with the course!)</p>
 </div>
