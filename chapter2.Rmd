@@ -11,3 +11,13 @@ date()
 ```
 
 Here we go again...
+
+The dataset I will analyse in this exercise is a subset from a more comprehensive dataset describing results from a survey on learning and studying statistics, found from [link] (https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS3-data.txt). The dataset has been collected from students' answers (total of 183) to the survey after a course Johdatus yhteiskuntatilastotieteeseen in autumn 2014. In addition to the answers to learning style- and attitude-related questions measured on Likert scale (assigned to a number 1-5 corresponding to how well the claim is felt to be true),some background information on the students (e.g. age, gender) and their points in the exam were collected. Full data description can be found on: [link] (https://www.mv.helsinki.fi/home/kvehkala/JYTmooc/JYTOPKYS2-meta.txt)
+
+To start, the subset of the data I prepared previously (data wrangling exercise), is read to this file. The subset has 7 variables (whereas the original had 60). The attitude, deep-, surface- and strategic learning variables correspond to an average value (from 1 to 5) to many questions (8-12 pieces) measuring the same dimension. Of the 183 answers, those that had 0 points from the final exam were excluded from this subset, leaving 166 answers ("rows"). These can be seen by checking the structure and dimensions of the subset:
+
+learning2014_subset <- read.csv("data/learning2014_subset.csv")
+
+str(learning2014_subset)
+dim(learning2014_subset)
+

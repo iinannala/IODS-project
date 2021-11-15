@@ -1,6 +1,7 @@
 #Iina Annala
 #14.11.2021
 #This file is for data wrangling in week 2 IODS course
+#original data from http://www.helsinki.fi/~kvehkala/JYTmooc/JYTOPKYS2-data.txt
 
 #read the table, and check it. his data has 60 variables with 183 columns, with data types being numerical, except for gender (character)
 week2data <- read.table("http://www.helsinki.fi/~kvehkala/JYTmooc/JYTOPKYS3-data.txt", sep="\t", header=TRUE)
